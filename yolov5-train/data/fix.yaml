@@ -1,0 +1,7 @@
+path: ../datasets/fix
+train: train/images
+val: valid/images
+test: valid/images
+
+nc: 3
+names: ['ball','robot','goalpost']

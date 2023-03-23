@@ -402,7 +402,6 @@ class AverageFPS:
 
 
 def annotate(args):
-    
     save_dir = _get_save_dir(args)
     model, has_postprocessing = _load_model(args)
     loader, saver, is_video = get_yolo_loader_and_saver(
@@ -457,6 +456,7 @@ def annotate(args):
             model_input_size=args.image_shape,
             images_per_sec=average_fps,
         )
+        print(topLeft)
 
         # display
         if is_webcam:
